@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Executive Architect | Access Portal</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed-variant": "#564427",
+            "inverse-on-surface": "#eaf1ff",
+            "on-primary-fixed": "#111c2d",
+            "secondary": "#0058be",
+            "on-primary-fixed-variant": "#3c475a",
+            "surface-container": "#e5eeff",
+            "surface-dim": "#cbdbf5",
+            "surface-container-highest": "#d3e4fe",
+            "on-tertiary-container": "#a38c6a",
+            "error": "#ba1a1a",
+            "tertiary-container": "#35260c",
+            "secondary-fixed": "#d8e2ff",
+            "surface-tint": "#545f73",
+            "on-surface-variant": "#45474c",
+            "primary": "#091426",
+            "on-background": "#0b1c30",
+            "surface-bright": "#f8f9ff",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#d3e4fe",
+            "on-secondary-fixed": "#001a42",
+            "on-error-container": "#93000a",
+            "on-surface": "#0b1c30",
+            "tertiary-fixed-dim": "#ddc39d",
+            "outline": "#75777d",
+            "primary-container": "#1e293b",
+            "on-secondary-container": "#fefcff",
+            "inverse-surface": "#213145",
+            "error-container": "#ffdad6",
+            "secondary-fixed-dim": "#adc6ff",
+            "surface-container-high": "#dce9ff",
+            "primary-fixed-dim": "#bcc7de",
+            "on-secondary-fixed-variant": "#004395",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#eff4ff",
+            "secondary-container": "#2170e4",
+            "background": "#f8f9ff",
+            "outline-variant": "#c5c6cd",
+            "surface": "#f8f9ff",
+            "on-error": "#ffffff",
+            "primary-fixed": "#d8e3fb",
+            "on-tertiary-fixed": "#271902",
+            "inverse-primary": "#bcc7de",
+            "tertiary": "#1e1200",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed": "#fadfb8",
+            "on-tertiary": "#ffffff",
+            "on-primary-container": "#8590a6"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .font-headline {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-panel {
+      background: rgba(239, 244, 255, 0.8);
+      backdrop-filter: blur(20px);
+    }
+
+    .primary-gradient {
+      background: linear-gradient(135deg, #091426 0%, #1e293b 100%);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background text-on-background min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden">
+  <!-- Background Architectural Textures (Tonal Layering) -->
+  <div class="absolute inset-0 pointer-events-none opacity-40">
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-surface-container rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-secondary-fixed rounded-full blur-[150px]"></div>
+  </div>
+  <!-- Main Container -->
+  <main
+    class="w-full max-w-[1200px] grid lg:grid-cols-2 gap-0 overflow-hidden bg-surface-container-lowest rounded-xl shadow-2xl relative z-10">
+    <!-- Left Side: Branding & Visual (Atmospheric Command Center) -->
+    <section
+      class="hidden lg:flex flex-col justify-between p-12 primary-gradient text-on-primary relative overflow-hidden">
+      <div class="relative z-20">
+        <div class="flex items-center gap-3 mb-12">
+          <div class="w-10 h-10 bg-secondary-container rounded flex items-center justify-center">
+            <span class="material-symbols-outlined text-on-secondary" data-icon="architecture">architecture</span>
+          </div>
+          <h1 class="font-headline text-2xl font-extrabold tracking-tighter">Executive Architect</h1>
+        </div>
+        <div class="space-y-6 max-w-md">
+          <h2 class="font-headline text-4xl font-bold leading-tight">Master your project lifecycles with surgical
+            precision.</h2>
+          <p class="text-on-primary-container text-lg leading-relaxed font-light">
+            Experience the next generation of management where data meets editorial design.
+          </p>
+        </div>
+      </div>
+      <!-- Dashboard Preview Mockup (Layered) -->
+      <div class="relative mt-12 transform translate-x-12 translate-y-12">
+        <div class="bg-surface-container-low/10 border border-white/10 rounded-lg p-4 backdrop-blur-md shadow-2xl">
+          <div class="flex gap-4 mb-4">
+            <div class="w-24 h-2 bg-secondary-container/50 rounded-full"></div>
+            <div class="w-12 h-2 bg-white/20 rounded-full"></div>
+          </div>
+          <div class="grid grid-cols-3 gap-3">
+            <div class="h-24 bg-white/5 rounded-lg"></div>
+            <div class="h-24 bg-white/5 rounded-lg"></div>
+            <div class="h-24 bg-white/5 rounded-lg"></div>
+          </div>
+        </div>
+        <!-- Absolute positioned visual anchor -->
+        <div class="absolute -top-6 -left-6 w-16 h-16 bg-secondary-container rounded-full blur-2xl opacity-50"></div>
+      </div>
+      <!-- Footer Quote -->
+      <div class="relative z-20">
+        <p class="text-sm font-label uppercase tracking-widest text-on-primary-container opacity-60 mb-2">System Status
+        </p>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 bg-emerald-400 rounded-full"></span>
+          <span class="text-sm">All operations nominal</span>
+        </div>
+      </div>
+    </section>
+    <!-- Right Side: Auth Forms -->
+    <section class="p-8 lg:p-16 flex flex-col justify-center bg-surface-container-lowest">
+      <!-- Login State -->
+      <div class="space-y-8" id="login-form">
+        <header class="space-y-2">
+          <h3 class="font-headline text-3xl font-bold text-primary">Welcome Back</h3>
+          <p class="text-on-surface-variant font-body">Sign in to your command suite to continue.</p>
+        </header>
+        <form class="space-y-5">
+          <div class="space-y-2">
+            <label class="text-sm font-semibold text-primary block">Professional Email</label>
+            <div class="relative">
+              <span
+                class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant text-lg"
+                data-icon="mail">mail</span>
+              <input
+                class="w-full pl-12 pr-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary transition-all text-on-surface placeholder:text-outline-variant"
+                placeholder="name@architect.com" type="email" />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex justify-between items-center">
+              <label class="text-sm font-semibold text-primary block">Secure Password</label>
+              <a class="text-xs font-semibold text-secondary hover:underline" href="#">Forgot Password?</a>
+            </div>
+            <div class="relative">
+              <span
+                class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant text-lg"
+                data-icon="lock">lock</span>
+              <input
+                class="w-full pl-12 pr-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary transition-all text-on-surface"
+                placeholder="••••••••" type="password" />
+            </div>
+          </div>
+          <!-- Validation State Simulation (Hidden by default, shown for example) -->
+          <div
+            class="flex items-center gap-2 p-3 bg-error-container/30 rounded-lg text-on-error-container text-sm hidden">
+            <span class="material-symbols-outlined text-error" data-icon="error">error</span>
+            Invalid credentials. Please verify and try again.
+          </div>
+          <button
+            class="w-full primary-gradient text-on-primary font-headline font-bold py-4 rounded-lg shadow-lg hover:shadow-secondary/20 hover:scale-[1.01] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
+            type="submit">
+            Authorize Access
+            <span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+          </button>
+        </form>
+        <footer class="text-center">
+          <p class="text-on-surface-variant text-sm">
+            New to the management suite?
+            <button class="text-secondary font-bold hover:underline ml-1"
+              onclick="document.getElementById('login-form').classList.add('hidden'); document.getElementById('register-form').classList.remove('hidden');">Create
+              an Account</button>
+          </p>
+        </footer>
+      </div>
+      <!-- Register State (Hidden by default) -->
+      <div class="space-y-8 hidden" id="register-form">
+        <header class="space-y-2">
+          <h3 class="font-headline text-3xl font-bold text-primary">Establish Authority</h3>
+          <p class="text-on-surface-variant font-body">Create your administrative identity.</p>
+        </header>
+        <form class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <label class="text-sm font-semibold text-primary block">First Name</label>
+              <input
+                class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary transition-all"
+                placeholder="John" type="text" />
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-semibold text-primary block">Last Name</label>
+              <input
+                class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary transition-all"
+                placeholder="Doe" type="text" />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <label class="text-sm font-semibold text-primary block">Professional Email</label>
+            <input
+              class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary transition-all"
+              placeholder="name@architect.com" type="email" />
+          </div>
+          <div class="space-y-2">
+            <label class="text-sm font-semibold text-primary block">Secure Password</label>
+            <input
+              class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary transition-all"
+              placeholder="Min. 12 characters" type="password" />
+          </div>
+          <div class="space-y-2">
+            <label class="text-sm font-semibold text-primary block">Confirm Password</label>
+            <input
+              class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary transition-all"
+              placeholder="Verify your password" type="password" />
+          </div>
+          <div class="flex items-start gap-3 py-2">
+            <input class="mt-1 rounded border-outline-variant text-secondary focus:ring-secondary" type="checkbox" />
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              I agree to the <a class="text-secondary hover:underline" href="#">Terms of Service</a> and <a
+                class="text-secondary hover:underline" href="#">Privacy Protocol</a>.
+            </p>
+          </div>
+          <button
+            class="w-full bg-secondary text-on-secondary font-headline font-bold py-4 rounded-lg shadow-lg hover:bg-secondary/90 transition-all flex items-center justify-center gap-2"
+            type="submit">
+            Register Identity
+            <span class="material-symbols-outlined text-lg" data-icon="how_to_reg">how_to_reg</span>
+          </button>
+        </form>
+        <footer class="text-center">
+          <p class="text-on-surface-variant text-sm">
+            Already have an account?
+            <button class="text-secondary font-bold hover:underline ml-1"
+              onclick="document.getElementById('register-form').classList.add('hidden'); document.getElementById('login-form').classList.remove('hidden');">Sign
+              In Instead</button>
+          </p>
+        </footer>
+      </div>
+      <!-- Loading Redirect Simulation (Hidden) -->
+      <div class="hidden flex flex-col items-center justify-center space-y-6 py-12" id="redirect-state">
+        <div class="relative w-16 h-16">
+          <div class="absolute inset-0 border-4 border-secondary/20 rounded-full"></div>
+          <div class="absolute inset-0 border-4 border-t-secondary rounded-full animate-spin"></div>
+        </div>
+        <div class="text-center">
+          <h4 class="font-headline text-xl font-bold text-primary">Authenticating...</h4>
+          <p class="text-on-surface-variant">Syncing with secure management servers.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Support Navigation -->
+  <nav class="mt-8 flex gap-8 text-xs font-semibold text-on-surface-variant/60 uppercase tracking-widest relative z-20">
+    <a class="hover:text-secondary transition-colors" href="#">Global Support</a>
+    <a class="hover:text-secondary transition-colors" href="#">Security Specs</a>
+    <a class="hover:text-secondary transition-colors" href="#">API Console</a>
+  </nav>
+  <!-- Decorative Image for Card Background Concept (Hidden but used for prompt) -->
+  <div class="hidden">
+    <img alt="Architectural Texture"
+      data-alt="ultra-modern minimalist architectural detail with soft shadows and clean white concrete textures under diffused daylight"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzNeUlUT6iU_AbmUHJ_7OKYutTETx0fl1ea6N_9KlR4LKID-Jk92fmFbHf3oZ7E8_xGCn2muOYwg76RS49OM-ONzQRq8J7aFd1KusjWWb8WL0mXEr69y2u5-PBMWx4PcND5rmzgri-pzO6H1HVgz59Bjp2mQhMiYCuu7yCy48q4cyLWQfreP8HOP40tKDh7UeXm3N26ikXamYcskih76P6yIFG2FSv33PkUPuoTQfmNqLBArfTLGng7I6R2ABX_Z7ECVYLbbwYVpul" />
+  </div>
+</body>
+
+</html>

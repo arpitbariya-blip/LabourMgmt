@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed-variant": "#564427",
+            "inverse-on-surface": "#eaf1ff",
+            "on-primary-fixed": "#111c2d",
+            "secondary": "#0058be",
+            "on-primary-fixed-variant": "#3c475a",
+            "surface-container": "#e5eeff",
+            "surface-dim": "#cbdbf5",
+            "surface-container-highest": "#d3e4fe",
+            "on-tertiary-container": "#a38c6a",
+            "error": "#ba1a1a",
+            "tertiary-container": "#35260c",
+            "secondary-fixed": "#d8e2ff",
+            "surface-tint": "#545f73",
+            "on-surface-variant": "#45474c",
+            "primary": "#091426",
+            "on-background": "#0b1c30",
+            "surface-bright": "#f8f9ff",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#d3e4fe",
+            "on-secondary-fixed": "#001a42",
+            "on-error-container": "#93000a",
+            "on-surface": "#0b1c30",
+            "tertiary-fixed-dim": "#ddc39d",
+            "outline": "#75777d",
+            "primary-container": "#1e293b",
+            "on-secondary-container": "#fefcff",
+            "inverse-surface": "#213145",
+            "error-container": "#ffdad6",
+            "secondary-fixed-dim": "#adc6ff",
+            "surface-container-high": "#dce9ff",
+            "primary-fixed-dim": "#bcc7de",
+            "on-secondary-fixed-variant": "#004395",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#eff4ff",
+            "secondary-container": "#2170e4",
+            "background": "#f8f9ff",
+            "outline-variant": "#c5c6cd",
+            "surface": "#f8f9ff",
+            "on-error": "#ffffff",
+            "primary-fixed": "#d8e3fb",
+            "on-tertiary-fixed": "#271902",
+            "inverse-primary": "#bcc7de",
+            "tertiary": "#1e1200",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed": "#fadfb8",
+            "on-tertiary": "#ffffff",
+            "on-primary-container": "#8590a6"
+          },
+          fontFamily: {
+            "headline": ["Manrope", "sans-serif"],
+            "body": ["Inter", "sans-serif"],
+            "label": ["Inter", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface flex min-h-screen">
+  <!-- SideNavBar -->
+  <aside
+    class="fixed left-0 top-0 h-full flex flex-col p-4 z-50 bg-slate-50 dark:bg-slate-950 h-screen w-64 border-r-0 font-manrope text-sm font-medium">
+    <div class="flex items-center gap-3 mb-10 px-2">
+      <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white">
+        <span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+      </div>
+      <div>
+        <h2 class="text-lg font-black text-slate-900 dark:text-slate-50 leading-tight">Architect Admin</h2>
+        <p class="text-xs text-on-surface-variant opacity-70">Management Suite</p>
+      </div>
+    </div>
+    <nav class="flex-1 space-y-1">
+      <a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 hover:translate-x-1 transition-transform duration-200 rounded-lg"
+        href="#">
+        <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+        <span>Dashboard</span>
+      </a>
+      <a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 hover:translate-x-1 transition-transform duration-200 rounded-lg"
+        href="#">
+        <span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+        <span>Materials</span>
+      </a>
+      <a class="flex items-center gap-3 px-3 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-lg font-semibold"
+        href="#">
+        <span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+        <span>Invoices</span>
+      </a>
+      <div class="pt-4 mt-4 border-t border-outline-variant/20">
+        <a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 hover:translate-x-1 transition-transform duration-200 rounded-lg"
+          href="#">
+          <span class="material-symbols-outlined" data-icon="logout">logout</span>
+          <span>Logout</span>
+        </a>
+      </div>
+    </nav>
+    <div class="mt-auto">
+      <button
+        class="w-full bg-primary text-on-primary py-3 rounded-lg font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary/10 hover:opacity-90 transition-opacity">
+        <span class="material-symbols-outlined" data-icon="add">add</span>
+        New Invoice
+      </button>
+    </div>
+  </aside>
+  <main class="flex-1 ml-64 min-h-screen bg-surface">
+    <!-- TopNavBar -->
+    <header
+      class="sticky top-0 w-full flex justify-between items-center px-8 py-4 z-40 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none font-manrope text-sm font-semibold tracking-tight">
+      <div class="flex items-center gap-2">
+        <span class="text-on-surface-variant">Invoices</span>
+        <span class="material-symbols-outlined text-xs opacity-40" data-icon="chevron_right">chevron_right</span>
+        <span class="text-primary font-bold">Create New</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <div class="relative">
+          <input
+            class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-lg text-sm focus:ring-2 focus:ring-secondary w-64"
+            placeholder="Search invoices..." type="text" />
+          <span
+            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-lg"
+            data-icon="search">search</span>
+        </div>
+        <div class="flex items-center gap-3 border-l border-outline-variant/30 pl-6">
+          <button
+            class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-slate-200/50 transition-colors active:scale-95 duration-200">
+            <span class="material-symbols-outlined text-on-surface-variant"
+              data-icon="notifications">notifications</span>
+          </button>
+          <button
+            class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-slate-200/50 transition-colors active:scale-95 duration-200">
+            <span class="material-symbols-outlined text-on-surface-variant" data-icon="settings">settings</span>
+          </button>
+          <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-surface-container-high">
+            <img alt="User profile avatar" class="w-full h-full object-cover"
+              data-alt="professional architect portrait wearing minimalist business attire in a bright daylight office"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsLc6urfv0YswWN_SVYU6BVFGZS1a3cdYxe0Mif70clTa5hHLoGp0Jt7fpSZporMwJY5nUMUSqiUbug_GcbgFxIR2dx94_Bbh1d3AhSDVWEtMum3g9yvE1T9Kqrv1DqH3_3OxXVfCCWCJx6qSM_EYtCQyYLOr_06rOtzMUsBQ0dh0cGc0POyVQ4EET-4icyJTW-X9MaQ9piar4PNqwQaqHdZ2f3j_S8Sq1mG9oTIW35SyZKWKZMBxe0EoQbyaio47UVTi1hUpgboLI" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Content Canvas -->
+    <div class="p-10 max-w-6xl mx-auto">
+      <div class="flex justify-between items-end mb-12">
+        <div>
+          <h1 class="text-4xl font-extrabold tracking-tighter text-primary mb-2">Invoice #INV-2024-001</h1>
+          <p class="text-on-surface-variant">Fill in the details below to generate a new project invoice.</p>
+        </div>
+        <div class="flex gap-3">
+          <button
+            class="px-5 py-2.5 rounded-lg font-semibold text-secondary bg-secondary-fixed flex items-center gap-2 hover:bg-secondary-fixed-dim transition-colors">
+            <span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+            Preview Invoice
+          </button>
+          <button
+            class="px-5 py-2.5 rounded-lg font-semibold text-on-primary bg-primary flex items-center gap-2 shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity">
+            <span class="material-symbols-outlined" data-icon="save">save</span>
+            Save Draft
+          </button>
+        </div>
+      </div>
+      <!-- Form Shell -->
+      <div class="grid grid-cols-12 gap-8">
+        <!-- Main Form Section -->
+        <div class="col-span-12 lg:col-span-8 space-y-8">
+          <!-- Basic Info Card -->
+          <section class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+            <h3 class="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary" data-icon="person">person</span>
+              Customer Details
+            </h3>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="col-span-2 md:col-span-1">
+                <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">Customer
+                  Name</label>
+                <input
+                  class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary text-on-surface placeholder:opacity-50"
+                  placeholder="e.g. Skyline Developments" type="text" />
+              </div>
+              <div class="col-span-2 md:col-span-1">
+                <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2">Invoice
+                  Date</label>
+                <div class="relative">
+                  <input
+                    class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary text-on-surface"
+                    type="date" />
+                  <span
+                    class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none"
+                    data-icon="calendar_today">calendar_today</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Dynamic Items Table Section -->
+          <section class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+            <div class="flex justify-between items-center mb-6">
+              <h3 class="text-lg font-bold text-primary flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary" data-icon="list_alt">list_alt</span>
+                Line Items
+              </h3>
+              <button class="text-secondary text-sm font-bold flex items-center gap-1 hover:underline">
+                <span class="material-symbols-outlined text-sm" data-icon="add_circle">add_circle</span>
+                Add Item Row
+              </button>
+            </div>
+            <div class="overflow-hidden">
+              <table class="w-full">
+                <thead>
+                  <tr class="text-left">
+                    <th class="pb-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant opacity-60">Item
+                      Description</th>
+                    <th
+                      class="pb-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant opacity-60 w-24">
+                      Qty</th>
+                    <th
+                      class="pb-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant opacity-60 w-40">
+                      Price</th>
+                    <th
+                      class="pb-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant opacity-60 w-40 text-right">
+                      Total</th>
+                    <th class="pb-4 w-10"></th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-outline-variant/10">
+                  <!-- Row 1 -->
+                  <tr class="group">
+                    <td class="py-4 pr-4">
+                      <select
+                        class="w-full px-4 py-2.5 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary text-sm">
+                        <option>Architectural Consultation</option>
+                        <option>Structural Analysis</option>
+                        <option>Blueprint Rendering</option>
+                        <option>Material Procurement</option>
+                      </select>
+                    </td>
+                    <td class="py-4 pr-4">
+                      <input
+                        class="w-full px-4 py-2.5 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary text-sm"
+                        type="number" value="1" />
+                    </td>
+                    <td class="py-4 pr-4">
+                      <div class="relative">
+                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xs">$</span>
+                        <input
+                          class="w-full pl-7 pr-4 py-2.5 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary text-sm"
+                          type="number" value="1250.00" />
+                      </div>
+                    </td>
+                    <td class="py-4 text-right font-semibold text-primary">
+                      $1,250.00
+                    </td>
+                    <td class="py-4 text-right">
+                      <button
+                        class="w-8 h-8 flex items-center justify-center rounded-lg text-error hover:bg-error-container/20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="material-symbols-outlined text-lg" data-icon="delete">delete</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- Row 2 -->
+                  <tr class="group">
+                    <td class="py-4 pr-4">
+                      <select
+                        class="w-full px-4 py-2.5 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary text-sm">
+                        <option>Structural Analysis</option>
+                        <option>Architectural Consultation</option>
+                        <option>Blueprint Rendering</option>
+                        <option>Material Procurement</option>
+                      </select>
+                    </td>
+                    <td class="py-4 pr-4">
+                      <input
+                        class="w-full px-4 py-2.5 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary text-sm"
+                        type="number" value="4" />
+                    </td>
+                    <td class="py-4 pr-4">
+                      <div class="relative">
+                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-xs">$</span>
+                        <input
+                          class="w-full pl-7 pr-4 py-2.5 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary text-sm"
+                          type="number" value="450.00" />
+                      </div>
+                    </td>
+                    <td class="py-4 text-right font-semibold text-primary">
+                      $1,800.00
+                    </td>
+                    <td class="py-4 text-right">
+                      <button
+                        class="w-8 h-8 flex items-center justify-center rounded-lg text-error hover:bg-error-container/20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="material-symbols-outlined text-lg" data-icon="delete">delete</span>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+        <!-- Right Sidebar / Summary Section -->
+        <div class="col-span-12 lg:col-span-4 space-y-6">
+          <!-- Summary Card -->
+          <div class="bg-primary text-on-primary p-8 rounded-xl shadow-2xl relative overflow-hidden">
+            <!-- Abstract background element -->
+            <div class="absolute top-0 right-0 w-32 h-32 bg-secondary opacity-20 -mr-16 -mt-16 rounded-full blur-3xl">
+            </div>
+            <h3 class="text-sm font-bold uppercase tracking-widest opacity-60 mb-8">Summary</h3>
+            <div class="space-y-4 mb-8">
+              <div class="flex justify-between items-center">
+                <span class="text-on-primary-container">Subtotal</span>
+                <span class="font-bold text-lg">$3,050.00</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-on-primary-container">Tax (10%)</span>
+                <span class="font-bold text-lg">$305.00</span>
+              </div>
+              <div class="pt-4 border-t border-white/10 flex justify-between items-center">
+                <span class="text-lg">Total Amount</span>
+                <span class="text-3xl font-black tracking-tighter text-white">$3,355.00</span>
+              </div>
+            </div>
+            <div class="space-y-3">
+              <button
+                class="w-full py-4 bg-white text-primary rounded-lg font-black text-sm uppercase tracking-widest hover:bg-slate-100 transition-colors flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined" data-icon="download">download</span>
+                Download PDF
+              </button>
+              <button
+                class="w-full py-4 bg-transparent border border-white/20 text-white rounded-lg font-black text-sm uppercase tracking-widest hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined" data-icon="print">print</span>
+                Print Invoice
+              </button>
+            </div>
+          </div>
+          <!-- Project Context Card -->
+          <div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-4">Linked Project</h4>
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
+                <img class="w-full h-full object-cover"
+                  data-alt="modern glass skyscraper architectural detail reflecting blue sky in downtown metropolitan area"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCzk11MA-EyVwUUV4_syNeCSW58cBV2wHBkbqkdoQLUb-A1JKk4wSnZ2Su-X73YAhZferz3Wa1Qomvy0QocX7gkxrdSPk26gaGO2pMmdlLol7rJs2HkBRuBLOG6VI3d9Il_kt-cEVIsF3FRMbpM_AKfRoWdcmsDvy7g24EzbqzAXoB0ZqeZhUNY_0FDIaJoacUckIaRd4NL-rdUAidaPkwdH1nyERyDaNSPTxLCIMRd57n_zz225XAnQvP53cI3MPy09Hh6Rf9kKpq" />
+              </div>
+              <div>
+                <p class="font-bold text-primary leading-tight">Nexus Corporate Tower</p>
+                <p class="text-xs text-on-surface-variant">Client: Apex Global</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-medium text-secondary">
+              <span class="material-symbols-outlined text-sm" data-icon="info">info</span>
+              View Project Details
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Modal Overlay (Hidden) -->
+  <div class="fixed inset-0 bg-primary/40 backdrop-blur-md z-[60] flex items-center justify-center hidden">
+    <div class="bg-white w-full max-w-4xl max-h-[921px] overflow-y-auto rounded-xl shadow-2xl p-10 relative">
+      <button class="absolute top-6 right-6 text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined" data-icon="close">close</span>
+      </button>
+      <div class="flex justify-between items-start border-b border-outline-variant pb-8 mb-8">
+        <div>
+          <h2 class="text-2xl font-black text-primary uppercase tracking-tighter">Executive Architect</h2>
+          <p class="text-sm text-on-surface-variant">123 Design District, NY 10012</p>
+        </div>
+        <div class="text-right">
+          <h1 class="text-4xl font-black text-primary">INVOICE</h1>
+          <p class="text-on-surface-variant">#INV-2024-001</p>
+        </div>
+      </div>
+      <!-- Modal Content Mockup -->
+      <div class="space-y-12">
+        <div class="grid grid-cols-2 gap-10">
+          <div>
+            <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-2">Billed To</h4>
+            <p class="font-bold text-lg text-primary">Skyline Developments</p>
+            <p class="text-on-surface-variant">45 Industrial Way<br />Brooklyn, NY 11201</p>
+          </div>
+          <div class="text-right">
+            <h4 class="text-xs font-bold uppercase text-on-surface-variant mb-2">Invoice Details</h4>
+            <p class="text-primary"><span class="font-bold">Date:</span> Jan 24, 2024</p>
+            <p class="text-primary"><span class="font-bold">Due Date:</span> Feb 24, 2024</p>
+          </div>
+        </div>
+        <!-- Mini Table -->
+        <div class="border-y border-outline-variant py-6">
+          <div
+            class="flex justify-between items-center mb-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+            <span class="w-1/2">Description</span>
+            <span class="w-1/6 text-center">Qty</span>
+            <span class="w-1/6 text-right">Price</span>
+            <span class="w-1/6 text-right">Total</span>
+          </div>
+          <div class="space-y-4">
+            <div class="flex justify-between items-center text-sm">
+              <span class="w-1/2 font-medium text-primary">Architectural Consultation</span>
+              <span class="w-1/6 text-center text-on-surface-variant">1</span>
+              <span class="w-1/6 text-right text-on-surface-variant">$1,250.00</span>
+              <span class="w-1/6 text-right font-bold text-primary">$1,250.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
