@@ -1,4 +1,3 @@
-<img width="1924" height="1084" alt="Screenshot 2026-06-10 113151" src="https://github.com/user-attachments/assets/b2349969-9fd3-4258-b021-3bbd8338b541" /><div align="center">
 
 # 🏗️ LabourMgmt
 
