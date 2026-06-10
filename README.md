@@ -297,7 +297,6 @@ All API endpoints are located in the `api/` directory. Clean URLs are supported 
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `POST` | `/api/auth` | Authenticate user via MHT ID |
 | `GET` | `/api/fetch_labour` | Fetch all labour records (JSON) |
 | `POST` | `/api/create` | Add a new labour record |
 | `POST` | `/api/Loadtable` | Load attendance table by labourer & month |
@@ -361,17 +360,6 @@ The `.htaccess` file handles:
 
 ---
 
-## 🔐 Authentication
-
-The app uses a **session-based authentication** system:
-
-1. Users log in via MHT ID on `login.php`
-2. Credentials are verified against `users.csv` or the `user_master` table
-3. On success, `$_SESSION['mht_id']` and `$_SESSION['user_name']` are set
-4. Protected pages check for valid session before rendering
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how to get started:
@@ -393,7 +381,6 @@ Contributions are welcome! Here's how to get started:
 
 ## 📝 Roadmap
 
-- [ ] Role-based access control (Admin / Manager / Viewer)
 - [ ] Export attendance & payroll reports to PDF/Excel
 - [ ] Dashboard analytics with charts
 - [ ] Email notifications for salary disbursements
