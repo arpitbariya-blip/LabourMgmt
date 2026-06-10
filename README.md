@@ -105,9 +105,7 @@ A full-stack web application for managing construction labour attendance, payrol
 
 ## 📸 Screenshots
 
-> _Add your screenshots here_
->
-> **Suggested screenshots:**
+> **screenshots:**
 > - Dashboard (Attendance & Labour Records)
 > - <img width="1924" height="1084" alt="Screenshot 2026-06-10 113151" src="https://github.com/user-attachments/assets/3c1031a9-1a40-4569-9e0e-d104b26e92f6" />
 > - Labour Attendance & Payroll Page
