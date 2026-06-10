@@ -1,4 +1,4 @@
-<div align="center">
+<img width="1924" height="1084" alt="Screenshot 2026-06-10 113151" src="https://github.com/user-attachments/assets/b2349969-9fd3-4258-b021-3bbd8338b541" /><div align="center">
 
 # 🏗️ LabourMgmt
 
@@ -109,12 +109,15 @@ A full-stack web application for managing construction labour attendance, payrol
 > _Add your screenshots here_
 >
 > **Suggested screenshots:**
-> - Login Page
 > - Dashboard (Attendance & Labour Records)
+> - <img width="1924" height="1084" alt="Screenshot 2026-06-10 113151" src="https://github.com/user-attachments/assets/3c1031a9-1a40-4569-9e0e-d104b26e92f6" />
 > - Labour Attendance & Payroll Page
+> - <img width="1922" height="932" alt="Screenshot 2026-06-10 113248" src="https://github.com/user-attachments/assets/2509d39f-74e2-47fe-af10-389f058d974c" />
 > - Invoice Management
+> - <img width="1923" height="919" alt="Screenshot 2026-06-10 113339" src="https://github.com/user-attachments/assets/7d76faf6-673e-4df5-8c7e-ddc60c663001" />
 > - Materials Inventory
-> - Add Labour / Invoice Modal
+> - <img width="1918" height="893" alt="Screenshot 2026-06-10 113314" src="https://github.com/user-attachments/assets/c06caadc-3022-4abb-95d5-560cd8d30bff" />
+
 
 ---
 
